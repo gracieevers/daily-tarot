@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+@import 'animate.css';
+body {
+    display: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #232526;
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #5D26C1);
+}
+
+h1 {
+    text-transform: Uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 5rem;
+    color: #E4E5E6;
+    text-align: center;
+}
+
+h1 {
+    position: center;
+    background: linear-gradient(to right, #a5fecb, #20BDFF, #a5fecb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    padding-right: 10px;
+    background: linear-gradient(to left, #20BDFF, #a5fecb, #20BDFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.blink_me {
+    animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
