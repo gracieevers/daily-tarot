@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #232526;
-    background: linear-gradient(to right, #5D26C1, #a17fe0, #5D26C1);
+    background: linear-gradient(to right, #f8e6ca, #fbf5ee, #f8e6ca);
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 h1 {
     position: center;
-    background: linear-gradient(to right, #a5fecb, #20BDFF, #a5fecb);
+    background: linear-gradient(to right, #6886a8, #af8a55, #6886a8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -29,7 +29,7 @@ h3 {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     padding-right: 10px;
-    background: linear-gradient(to left, #20BDFF, #a5fecb, #20BDFF);
+    background: linear-gradient(to left, #93a598, #8bb9a2, #93a598);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 30px;
