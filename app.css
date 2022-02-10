@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
-@import 'animate.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
     display: auto;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #232526;
     background: linear-gradient(to right, #f3ede4, #f1eeeb, #f3ede4);
 }
 
 .title {
-    font-family: "Montserrat";
+    font-family: "Rubik";
     text-align: center;
+    vertical-align: top;
     color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     height: 100vh;
     letter-spacing: 1px;
 }
 
 h1 {
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-image: url(https://i.kym-cdn.com/photos/images/original/000/935/542/ff6.gif);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
@@ -31,10 +30,11 @@ h1 {
     text-transform: uppercase;
     font-size: 120px;
     line-height: .75;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
-h3 {
+
+/* h3 {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
@@ -44,14 +44,44 @@ h3 {
     -webkit-text-fill-color: transparent;
     margin-right: 30px;
     margin-left: 30px;
+    margin-bottom: 100px;
+} */
+
+.btn-liquid {
+    display: inline-block;
+    position: relative;
+    width: 240px;
+    height: 60px;
+    border-radius: 27px;
+    color: #fff;
+    font: 700 14px/60px "Droid Sans", sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.blink_me {
-    animation: blinker 3s linear infinite;
+.btn-liquid .inner {
+    position: relative;
+    z-index: 2;
 }
 
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+.btn-liquid canvas {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    z-index: 1;
+}
+
+h2 spam {
+    font-size: 1em;
+}
+
+h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 3rem;
+    color: #eacda3;
+    text-align: center;
 }
