@@ -33,55 +33,85 @@ h1 {
     margin: 5px 0;
 }
 
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* h3 {
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    padding-right: 10px;
-    background: linear-gradient(to left, #b1bbb9, #9ea8cc, #b1bbb9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 100px;
+.button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Montserrat', cursive;
+    font-size: 22px;
+    text-transform: lowercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #d8d3ce;
+    background: #d19b4f;
+    background: linear-gradient(90deg, rgb(196, 176, 154) 0%, rgb(177, 142, 101) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(209, 148, 79, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid rgb(170, 117, 57);
+    box-shadow: 0 0 60px rgba(255, 136, 0, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+    opacity: 1;
+}
+
+
+/* button:hover::after,
+button:focus::after {
+    animation: none;
+    display: none;
 } */
 
-.btn-liquid {
-    display: inline-block;
-    position: relative;
-    width: 240px;
-    height: 60px;
-    border-radius: 27px;
-    color: #fff;
-    font: 700 14px/60px "Droid Sans", sans-serif;
-    letter-spacing: 0.05em;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
-.btn-liquid .inner {
-    position: relative;
-    z-index: 2;
-}
+/* @keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+} */
 
-.btn-liquid canvas {
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    bottom: -50px;
-    left: -50px;
-    z-index: 1;
-}
 
-h2 spam {
-    font-size: 1em;
-}
-
-h2 {
+/* h2 {
     font-family: 'Pirata One', cursive;
     font-size: 3rem;
     color: #eacda3;
     text-align: center;
-}
+} */
